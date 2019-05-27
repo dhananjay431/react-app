@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import button from './Hello';
-
-function About() {
-  return <h2>About</h2>;
-}
+import About from './About';
+// function About() {
+//   return <h2>About</h2>;
+// }
 
 function Users() {
   return <h2>Users</h2>;
@@ -29,7 +29,7 @@ function AppRouter() {
           </ul>
         </nav>
         </div>
-        <div className="rside">
+        <div className="rside bg-light">
         <Route path="/" exact component={button} />
         <Route path="/about/" component={About} />
         <Route path="/users/" component={Users} />
